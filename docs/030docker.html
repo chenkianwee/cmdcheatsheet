@@ -55,6 +55,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vim" href="040vim.html" />
     <link rel="prev" title="Linux commands" href="020linux.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -99,6 +100,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Docker Commands
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="040vim.html">
+   Vim
   </a>
  </li>
 </ul>
@@ -191,6 +197,70 @@
                 
   <div class="section" id="docker-commands">
 <h1>Docker Commands<a class="headerlink" href="#docker-commands" title="Permalink to this headline">¶</a></h1>
+<p>Check for running container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker ps
+</pre></div>
+</div>
+<p>Check all container including stopped container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker ps -a
+</pre></div>
+</div>
+<p>Go into the container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker exec -it containername bash
+</pre></div>
+</div>
+<p>Go into the container as root user</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker exec -u root -it containername bash
+</pre></div>
+</div>
+<p>Copy file from container to host</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">containername</span><span class="p">:</span><span class="o">/</span><span class="n">file</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="ow">in</span><span class="o">/</span><span class="n">container</span> <span class="o">/</span><span class="n">file</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="ow">in</span><span class="o">/</span><span class="n">host</span>
+</pre></div>
+</div>
+<p>Copy file from host to container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker cp /file/path/in/host containername:/file/path/in/container
+</pre></div>
+</div>
+<p>Restart a container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker restart containername
+</pre></div>
+</div>
+<p>Start a container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker start containername
+</pre></div>
+</div>
+<p>Stop a container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker stop containername
+</pre></div>
+</div>
+<p>Run a container, will grab the image specified and set it up. -d runs the container in the background.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker run -d --name name repository/ImageName:tag
+</pre></div>
+</div>
+<p>Remove a container. -v remove volume associated with the container</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker rm containername -v
+</pre></div>
+</div>
+<p>Remove a volume</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker volume rm volume_name
+</pre></div>
+</div>
+<p>List all volumes</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker volume ls
+</pre></div>
+</div>
+<p>Remove a network</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker network rm network_name
+</pre></div>
+</div>
+<p>List all networks</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker network ls
+</pre></div>
+</div>
+<p>Create a network</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker network create network_name
+</pre></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -222,6 +292,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="020linux.html" title="previous page">Linux commands</a>
+    <a class='right-next' id="next-link" href="040vim.html" title="next page">Vim</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

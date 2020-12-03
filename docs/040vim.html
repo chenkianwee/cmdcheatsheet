@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to CKW Command Line Cheat Sheet &#8212; CKW Command Line Cheat Sheet</title>
+    <title>Vim &#8212; CKW Command Line Cheat Sheet</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -55,7 +55,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linux commands" href="020linux.html" />
+    <link rel="prev" title="Docker Commands" href="030docker.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -84,13 +84,13 @@
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="010intro.html">
    Welcome to CKW Command Line Cheat Sheet
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="020linux.html">
    Linux commands
@@ -101,8 +101,8 @@
    Docker Commands
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="040vim.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Vim
   </a>
  </li>
@@ -146,7 +146,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/010intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/040vim.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -166,7 +166,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/010intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/040vim.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -194,10 +194,41 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-ckw-command-line-cheat-sheet">
-<h1>Welcome to CKW Command Line Cheat Sheet<a class="headerlink" href="#welcome-to-ckw-command-line-cheat-sheet" title="Permalink to this headline">¶</a></h1>
-<p>This is a book with cheat sheets of terminal commands.</p>
-<div class="toctree-wrapper compound">
+  <div class="section" id="vim">
+<h1>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://linuxhandbook.com/basic-vim-commands/">Vim command</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>i = Enter insert mode
+
+Esc = Enter command mode
+
+x or Del = Delete a character
+
+X = Delete character is backspace mode
+
+u = Undo changes
+
+Ctrl + r = Redo changes
+
+yy = Copy a line
+
+dd = Delete a line
+
+p = Paste the content of the buffer
+
+/&lt;search_term&gt; = Search and then cycle through matches with n and N
+
+[[ or gg = Move to the beginning of a file
+
+]] or G = Move to the end of a file
+
+:%s/foo/bar/gci = Search and replace all occurrences with confirmation
+
+Esc + :w = Save changes
+
+Esc + :wq or Esc + ZZ = Save and quit Vim
+
+Esc + :q! = Force quit Vim discarding all changes
+</pre></div>
 </div>
 </div>
 
@@ -229,7 +260,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="020linux.html" title="next page">Linux commands</a>
+    <a class='left-prev' id="prev-link" href="030docker.html" title="previous page">Docker Commands</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

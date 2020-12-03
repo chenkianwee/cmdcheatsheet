@@ -102,6 +102,11 @@
    Docker Commands
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="040vim.html">
+   Vim
+  </a>
+ </li>
 </ul>
 
 </nav> <!-- To handle the deprecated key -->
@@ -192,6 +197,33 @@
   <a class="reference internal nav-link" href="#ubuntu">
    Ubuntu
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-system">
+     File System
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shellscript">
+     Shellscript
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#internet">
+     Internet
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#read-and-write-text">
+     Read and Write Text
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -208,6 +240,8 @@
 <h1>Linux commands<a class="headerlink" href="#linux-commands" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ubuntu">
 <h2>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>Update the OS</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get update
 
@@ -222,6 +256,9 @@ $ sudo apt-get upgrade
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get app_name
 </pre></div>
 </div>
+</div>
+<div class="section" id="file-system">
+<h3>File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h3>
 <p>List a directory</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls
 </pre></div>
@@ -239,6 +276,46 @@ $ ls -la file/foldername
 <p>Remove a folder.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rm -r foldername
 </pre></div>
+</div>
+<p>Change permission</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod g=rw filename
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">u</span><span class="o">=</span><span class="n">owner</span>
+<span class="n">g</span><span class="o">=</span><span class="n">group</span> <span class="n">users</span>
+<span class="n">o</span><span class="o">=</span><span class="n">other</span> <span class="n">users</span>
+<span class="n">a</span><span class="o">=</span><span class="nb">all</span> <span class="n">users</span>
+
+<span class="n">r</span><span class="o">=</span><span class="n">read</span>
+<span class="n">w</span><span class="o">=</span><span class="n">write</span>
+<span class="o">-=</span><span class="n">no</span> <span class="n">permission</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shellscript">
+<h3>Shellscript<a class="headerlink" href="#shellscript" title="Permalink to this headline">¶</a></h3>
+<p>Execute a shellscript</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo sh shellscript_name
+</pre></div>
+</div>
+</div>
+<div class="section" id="internet">
+<h3>Internet<a class="headerlink" href="#internet" title="Permalink to this headline">¶</a></h3>
+<p>Download a file from website with curl</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -L https://github.com/chenkianwee/masa3db/archive/0.02.zip &gt; masa3db-0.02.zip
+</pre></div>
+</div>
+</div>
+<div class="section" id="read-and-write-text">
+<h3>Read and Write Text<a class="headerlink" href="#read-and-write-text" title="Permalink to this headline">¶</a></h3>
+<p>Read a text file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">filename</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Create a text file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&gt;</span> <span class="n">filename</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>

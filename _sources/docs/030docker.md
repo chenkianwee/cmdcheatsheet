@@ -8,6 +8,19 @@ Check all container including stopped container
 ```
 $ sudo docker ps -a
 ```
+Build a docker image, -t allows you to specify Name and optionally a tag in the ‘name:tag’ format
+```
+$ sudo docker build -t yourName/ImageName:tag
+```
+Login to Docker Hub
+```
+$ sudo docker login
+```
+Push build image to Docker github
+```
+$ sudo docker push yourName/ImageName:tag
+```
+## Container
 Go into the container
 ```
 $ sudo docker exec -it containername bash
@@ -44,6 +57,8 @@ Remove a container. -v remove volume associated with the container
 ```
 $ sudo docker rm containername -v
 ```
+
+## Volume
 Remove a volume
 ```
 $ sudo docker volume rm volume_name
@@ -52,6 +67,8 @@ List all volumes
 ```
 $ sudo docker volume ls
 ```
+
+## Network
 Remove a network
 ```
 $ sudo docker network rm network_name
@@ -63,4 +80,18 @@ $ sudo docker network ls
 Create a network
 ```
 $ sudo docker network create network_name
+```
+
+## Image
+List all images
+```
+$ sudo docker image ls
+```
+Remove image
+```
+$ sudo docker image rm imageName
+```
+Download an image
+```
+$ sudo docker image pull imageName
 ```

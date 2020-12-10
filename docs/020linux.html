@@ -228,6 +228,11 @@
      Read and Write Text
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#system">
+     System
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -319,6 +324,21 @@ $ ls -la file/foldername
 </div>
 <p>Create a text file</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&gt;</span> <span class="n">filename</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="system">
+<h3>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h3>
+<p>Check running service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ systemctl status process_name
+</pre></div>
+</div>
+<p>Stop running service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ systemctl stop process_name
+</pre></div>
+</div>
+<p>Start running service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ systemctl start process_name
 </pre></div>
 </div>
 </div>

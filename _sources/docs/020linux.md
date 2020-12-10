@@ -68,3 +68,16 @@ Create a text file
 ```
 cat > filename.txt
 ```
+### System
+Check running service
+```
+$ systemctl status process_name
+```
+Stop running service
+```
+$ systemctl stop process_name
+```
+Start running service
+```
+$ systemctl start process_name
+```

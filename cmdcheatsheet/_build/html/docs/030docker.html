@@ -193,6 +193,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#container">
+   Container
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#volume">
+   Volume
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#network">
+   Network
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -210,6 +234,8 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker ps -a
 </pre></div>
 </div>
+<div class="section" id="container">
+<h2>Container<a class="headerlink" href="#container" title="Permalink to this headline">¶</a></h2>
 <p>Go into the container</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker exec -it containername bash
 </pre></div>
@@ -246,6 +272,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker rm containername -v
 </pre></div>
 </div>
+</div>
+<div class="section" id="volume">
+<h2>Volume<a class="headerlink" href="#volume" title="Permalink to this headline">¶</a></h2>
 <p>Remove a volume</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker volume rm volume_name
 </pre></div>
@@ -254,6 +283,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker volume ls
 </pre></div>
 </div>
+</div>
+<div class="section" id="network">
+<h2>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h2>
 <p>Remove a network</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker network rm network_name
 </pre></div>
@@ -265,6 +297,7 @@
 <p>Create a network</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker network create network_name
 </pre></div>
+</div>
 </div>
 </div>
 

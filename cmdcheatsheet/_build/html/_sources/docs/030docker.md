@@ -8,6 +8,8 @@ Check all container including stopped container
 ```
 $ sudo docker ps -a
 ```
+
+## Container
 Go into the container
 ```
 $ sudo docker exec -it containername bash
@@ -44,6 +46,8 @@ Remove a container. -v remove volume associated with the container
 ```
 $ sudo docker rm containername -v
 ```
+
+## Volume
 Remove a volume
 ```
 $ sudo docker volume rm volume_name
@@ -52,6 +56,8 @@ List all volumes
 ```
 $ sudo docker volume ls
 ```
+
+## Network
 Remove a network
 ```
 $ sudo docker network rm network_name

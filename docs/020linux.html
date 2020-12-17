@@ -233,6 +233,11 @@
      System
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network">
+     Network
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -266,6 +271,14 @@ $ sudo apt-get upgrade
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get app_name
 </pre></div>
 </div>
+<p>Check if program is installed</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ apt list --installed program_name
+</pre></div>
+</div>
+<p>Remove program</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get remove --auto-remove program_name
+</pre></div>
+</div>
 </div>
 <div class="section" id="file-system">
 <h3>File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h3>
@@ -274,7 +287,9 @@ $ sudo apt-get upgrade
 </pre></div>
 </div>
 <p>List with details, or show all hidden files</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls -l file/foldername
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls -lh file/foldername (will be able to see size in human readable way)
+
+$ ls -l file/foldername
 
 $ ls -la file/foldername
 </pre></div>
@@ -299,6 +314,14 @@ $ ls -la file/foldername
 <span class="n">r</span><span class="o">=</span><span class="n">read</span>
 <span class="n">w</span><span class="o">=</span><span class="n">write</span>
 <span class="o">-=</span><span class="n">no</span> <span class="n">permission</span>
+</pre></div>
+</div>
+<p>Add directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo mkdir
+</pre></div>
+</div>
+<p>Copy files from local machine to a remote machine</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ scp C:\local\machine\file\path username@chaosbox.com:/your/path/on/remote/machine
 </pre></div>
 </div>
 </div>
@@ -339,6 +362,19 @@ $ ls -la file/foldername
 </div>
 <p>Start running service</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ systemctl start process_name
+</pre></div>
+</div>
+<p>Check distribution</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cat /etc/os-release
+</pre></div>
+</div>
+</div>
+<div class="section" id="network">
+<h3>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h3>
+<p>Get ip</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hostname</span> <span class="o">-</span><span class="n">i</span>
+
+<span class="n">hostname</span>
 </pre></div>
 </div>
 </div>

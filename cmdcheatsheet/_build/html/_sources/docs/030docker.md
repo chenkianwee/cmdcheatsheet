@@ -8,7 +8,18 @@ Check all container including stopped container
 ```
 $ sudo docker ps -a
 ```
-
+Build a docker image, -t allows you to specify Name and optionally a tag in the ‘name:tag’ format
+```
+$ sudo docker build -t yourName/ImageName:tag
+```
+Login to Docker Hub
+```
+$ sudo docker login
+```
+Push build image to Docker github
+```
+$ sudo docker push yourName/ImageName:tag
+```
 ## Container
 Go into the container
 ```
@@ -69,4 +80,26 @@ $ sudo docker network ls
 Create a network
 ```
 $ sudo docker network create network_name
+```
+
+## Image
+List all images
+```
+$ sudo docker image ls
+```
+Remove image
+```
+$ sudo docker image rm imageName
+```
+Download an image
+```
+$ sudo docker image pull imageName
+```
+Download and save Docker image to a tar file with this command.
+```
+$ sudo docker save fraunhoferiosb/frost-server:latest > frost-server.tar
+```
+Load the image with this command.
+```
+$ sudo docker load -i frost-server.tar
 ```

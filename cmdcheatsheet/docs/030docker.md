@@ -95,3 +95,11 @@ Download an image
 ```
 $ sudo docker image pull imageName
 ```
+Download and save Docker image to a tar file with this command.
+```
+$ sudo docker save fraunhoferiosb/frost-server:latest > frost-server.tar
+```
+Load the image with this command.
+```
+$ sudo docker load -i frost-server.tar
+```

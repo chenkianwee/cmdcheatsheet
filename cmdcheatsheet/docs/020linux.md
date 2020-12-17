@@ -16,6 +16,15 @@ Install an app
 ```
 $ sudo apt-get app_name
 ```
+Check if program is installed
+```
+$ apt list --installed program_name
+```
+Remove program
+```
+$ sudo apt-get remove --auto-remove program_name
+```
+
 ### File System
 List a directory
 ```
@@ -23,6 +32,8 @@ $ ls
 ```
 List with details, or show all hidden files
 ```
+$ ls -lh file/foldername (will be able to see size in human readable way)
+
 $ ls -l file/foldername
 
 $ ls -la file/foldername
@@ -49,16 +60,27 @@ r=read
 w=write
 -=no permission
 ```
+Add directory
+```
+$ sudo mkdir
+```
+Copy files from local machine to a remote machine
+```
+$ scp C:\local\machine\file\path username@chaosbox.com:/your/path/on/remote/machine
+```
+
 ### Shellscript
 Execute a shellscript
 ```
 $ sudo sh shellscript_name
 ```
+
 ### Internet
 Download a file from website with curl
 ```
 $ curl -L https://github.com/chenkianwee/masa3db/archive/0.02.zip > masa3db-0.02.zip
 ```
+
 ### Read and Write Text
 Read a text file
 ```
@@ -68,6 +90,7 @@ Create a text file
 ```
 cat > filename.txt
 ```
+
 ### System
 Check running service
 ```
@@ -80,4 +103,16 @@ $ systemctl stop process_name
 Start running service
 ```
 $ systemctl start process_name
+```
+Check distribution
+```
+$ cat /etc/os-release
+```
+
+### Network
+Get ip
+```
+hostname -i
+
+hostname
 ```

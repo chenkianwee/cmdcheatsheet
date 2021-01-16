@@ -26,6 +26,14 @@ $ sudo apt-get remove --auto-remove program_name
 ```
 
 ### File System
+Check size of a directory
+```
+$ du -sh /path/to/folder
+```
+Check volumes in system
+```
+$ df -h
+```
 List a directory
 ```
 $ ls
@@ -38,13 +46,25 @@ $ ls -l file/foldername
 
 $ ls -la file/foldername
 ```
+Copy file
+```
+$ cp /path/to/file1 /path/to/file2
+
+$ cp -r /path/to/folder /path/to/folder
+
+```
 Remove a file.
 ```
 $ rm filename
 ```
+Create a file
+```
+# touch filename
+```
 Remove a folder.
 ```
 $ rm -r foldername
+$ rm -rf foldername #delete all folders in folders
 ```
 Change permission
 ```
@@ -68,6 +88,7 @@ Copy files from local machine to a remote machine
 ```
 $ scp C:\local\machine\file\path username@chaosbox.com:/your/path/on/remote/machine
 ```
+
 
 ### Shellscript
 Execute a shellscript

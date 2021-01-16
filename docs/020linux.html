@@ -282,6 +282,14 @@ $ sudo apt-get upgrade
 </div>
 <div class="section" id="file-system">
 <h3>File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h3>
+<p>Check size of a directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ du -sh /path/to/folder
+</pre></div>
+</div>
+<p>Check volumes in system</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ df -h
+</pre></div>
+</div>
 <p>List a directory</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls
 </pre></div>
@@ -294,12 +302,24 @@ $ ls -l file/foldername
 $ ls -la file/foldername
 </pre></div>
 </div>
+<p>Copy file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cp /path/to/file1 /path/to/file2
+
+$ cp -r /path/to/folder /path/to/folder
+
+</pre></div>
+</div>
 <p>Remove a file.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rm filename
 </pre></div>
 </div>
+<p>Create a file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># touch filename</span>
+</pre></div>
+</div>
 <p>Remove a folder.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rm -r foldername
+$ rm -rf foldername #delete all folders in folders
 </pre></div>
 </div>
 <p>Change permission</p>
